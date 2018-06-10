@@ -41,11 +41,11 @@ namespace ProfitLossCalculator
             double profit = Calculate.CalculateProfit(entry, exit);
 
             ResultLabel.Text = profit > 0 ? $"Profit: {Settings.Currency}{profit}," : $"Loss: {Settings.Currency}{profit},";
-            ResultLabel.Text += $" Return: {Calculate.CalculateROI(exit, principal)}%";
+            ResultLabel.Text += $" ROI: {Calculate.CalculateROI(exit, principal)}%";
 
             /*           Add to history                 */
-
-            //CalculationHistory.AddData()
+            string info1 = $"Principal: {principal}, Entry: {entry}, Exit: {exit}";
+            CalculationHistory.AddData(info1, ResultLabel.Text);
         }
 
         private void CheckEmpty()

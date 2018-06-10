@@ -42,11 +42,12 @@ namespace ProfitLossCalculator
 
             string rewardRatio = Calculate.CalculateRiskRewardRatio(entry, exit, stop);
 
-            ResultLabel.Text = $"Profit: {profit}  {rewardRatio} ROI: {ROI}%";
+            ResultLabel.Text = profit > 0 ? $"Profit: {Settings.Currency}{profit}," : $"Loss: {Settings.Currency}{profit},";
+            ResultLabel.Text += $" {rewardRatio}, ROI: {Calculate.CalculateROI(exit, principal)}%";
 
             string info1 = $"Entry: {entry}, Target: {exit}, Stop: {stop}";
             string info2 = $"Profit: {Settings.Currency}{profit}, {rewardRatio}, ROI: {ROI}";
-            CalculationHistory.AddData(info1, info1);
+            CalculationHistory.AddData(info1, info2);
         }
 
         private void CheckEmpty()

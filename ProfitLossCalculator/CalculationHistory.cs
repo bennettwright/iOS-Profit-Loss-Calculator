@@ -2,6 +2,7 @@ using Foundation;
 using System;
 using UIKit;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ProfitLossCalculator
 {
@@ -14,11 +15,11 @@ namespace ProfitLossCalculator
         private List<TableItem> coreData = new List<TableItem>();
         private static List<TableItem> data = new List<TableItem>();
 
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             HistoryTable.Source = new TableSource(coreData);
-            ViewWillAppear(false);
         }
 
         //info1 will be all entered info, like entry, exit, etc.
@@ -30,6 +31,7 @@ namespace ProfitLossCalculator
             base.ViewWillAppear(animated);
             coreData.AddRange(data);
             HistoryTable.ReloadData();
+            data.Clear(); // make sure to clear so it doesn't add same calculation next time
         }
     }
 
@@ -38,18 +40,14 @@ namespace ProfitLossCalculator
      */
     public class TableSource : UITableViewSource
     {
+
         List<TableItem> tableItems;
         protected string cellIdentifier = "TableCell";
 
         public TableSource(List<TableItem> items)
         {
-            tableItems = new List<TableItem>();
+            tableItems = items;
         }
-
-        public override nint NumberOfSections(UITableView tableView)  
-        {  
-            return 1;  
-        } 
 
         public override nint RowsInSection(UITableView tableview, nint section)
         {
@@ -72,15 +70,14 @@ namespace ProfitLossCalculator
 
             cell.TextLabel.Text = tableItems[indexPath.Row].Title;
             cell.DetailTextLabel.Text = tableItems[indexPath.Row].Details;
-
-            //cell.TextLabel.Text = $" {tableItems[indexPath.Section][indexPath.Row].Element}, " +
-            //    $"{tableItems[keys[indexPath.Section]][indexPath.Row].Symbol}";
-
-            //cell.DetailTextLabel.Text = $"Atomic Number: {tableItems[keys[indexPath.Section]][indexPath.Row].AtomicNumber} " +
-                //$"Period: {tableItems[keys[indexPath.Section]][indexPath.Row].Period}";
-
             return cell;
         }
+
+        public override nint NumberOfSections(UITableView tableView)
+        {
+            return 1;
+        }
+
 
         #region  editing methods 
 
@@ -123,8 +120,8 @@ namespace ProfitLossCalculator
     public class TableItem
     {
         public string Title { get; set; }
-        public string Details { get; set; }
 
+        public string Details { get; set; }
 
         public UITableViewCellStyle CellStyle
         {
@@ -140,12 +137,13 @@ namespace ProfitLossCalculator
         }
         protected UITableViewCellAccessory cellAccessory = UITableViewCellAccessory.None;
 
-        public TableItem(string t) { }
+        public TableItem() { }
 
-        public TableItem(string titl, string detl)
-        {
-            Title = titl;
-            Details = detl;
-        }
+        public TableItem(string title)
+        { Title = title; }
+
+        public TableItem(string title, string detail)
+        { Title = title; Details = detail; }
+
     } 
 }
