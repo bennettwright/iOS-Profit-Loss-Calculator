@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="216">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,19 +17,19 @@
                         <viewControllerLayoutGuide type="bottom" id="202"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="207">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4418" translatesAutoresizingMaskIntoConstraints="NO" image="Up-Market">
-                                <rect key="frame" x="67.5" y="106.5" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4418" translatesAutoresizingMaskIntoConstraints="NO" image="Up-Market" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="141" width="240" height="128"/>
                                 <constraints>
                                     <constraint id="4419" firstItem="4418" firstAttribute="height" constant="128"/>
                                     <constraint id="4420" firstItem="4418" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4430" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="256.5" width="240" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4430" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="291" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,8 +37,8 @@
                                     <constraint id="4431" firstItem="4430" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4432" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount">
-                                <rect key="frame" x="67.5" y="285" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4432" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="319.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -46,8 +46,8 @@
                                     <constraint id="4433" firstItem="4432" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4434" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="326" width="222" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4434" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="360.5" width="222" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,8 +55,8 @@
                                     <constraint id="4435" firstItem="4434" firstAttribute="width" constant="222"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4436" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:">
-                                <rect key="frame" x="67.5" y="392.5" width="240" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4436" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="427" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,8 +64,8 @@
                                     <constraint id="4437" firstItem="4436" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4438" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="354.5" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4438" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="389" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -73,8 +73,8 @@
                                     <constraint id="4439" firstItem="4438" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4440" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="420" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4440" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="454.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -82,8 +82,8 @@
                                     <constraint id="4441" firstItem="4440" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4442" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="536.5" width="240" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4442" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="571" width="240" height="40"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="Calculate"/>
                                 <constraints>
@@ -95,8 +95,8 @@
                                     <action selector="CalculateButton_TouchUpInside:" destination="206" id="4512" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4447" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="22.5" y="589.5" width="326" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4447" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="42" y="624" width="326" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,8 +104,8 @@
                                     <constraint id="4448" firstItem="4447" firstAttribute="width" constant="326"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4479" translatesAutoresizingMaskIntoConstraints="NO" text="Stop Loss:">
-                                <rect key="frame" x="67.5" y="459" width="240" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4479" translatesAutoresizingMaskIntoConstraints="NO" text="Stop Loss:" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="493.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,8 +113,8 @@
                                     <constraint id="4480" firstItem="4479" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4487" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="487.5" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4487" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="87" y="522" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -318,91 +318,348 @@
                         <viewControllerLayoutGuide type="bottom" id="204"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="212">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="519" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="Up-Market">
-                                <rect key="frame" x="67.5" y="106.5" width="240" height="128"/>
+                                <rect key="frame" x="106" y="89.5" width="526" height="379"/>
                                 <constraints>
                                     <constraint id="538" firstItem="519" firstAttribute="height" constant="128"/>
                                     <constraint id="11856" firstItem="519" firstAttribute="width" constant="240"/>
+                                    <constraint id="12966" firstItem="519" firstAttribute="width" constant="526"/>
+                                    <constraint id="12967" firstItem="519" firstAttribute="height" constant="379"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="538"/>
+                                        <include reference="11856"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="538"/>
+                                        <exclude reference="11856"/>
+                                        <exclude reference="12966"/>
+                                        <exclude reference="12967"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="538"/>
+                                        <include reference="11856"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="538"/>
+                                        <include reference="11856"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="12966"/>
+                                        <include reference="12967"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="520" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="267.5" width="240" height="20.5"/>
+                                <rect key="frame" x="106" y="483.5" width="526" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <constraints>
                                     <constraint id="557" firstItem="520" firstAttribute="width" constant="240"/>
+                                    <constraint id="12976" firstItem="520" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="557"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="557"/>
+                                        <exclude reference="12976"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="557"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="557"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="12976"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="521" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="352" width="222" height="20.5"/>
+                                <rect key="frame" x="106" y="563" width="526" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <constraints>
                                     <constraint id="561" firstItem="521" firstAttribute="width" constant="222"/>
+                                    <constraint id="13005" firstItem="521" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="561"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="561"/>
+                                        <exclude reference="13005"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="561"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="561"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13005"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="522" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:">
-                                <rect key="frame" x="67.5" y="423.5" width="240" height="20.5"/>
+                                <rect key="frame" x="106" y="630.5" width="526" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <constraints>
                                     <constraint id="565" firstItem="522" firstAttribute="width" constant="240"/>
+                                    <constraint id="13011" firstItem="522" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="565"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="565"/>
+                                        <exclude reference="13011"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="565"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="565"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13011"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="523" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="575" width="240" height="20.5"/>
+                                <rect key="frame" x="106" y="783" width="526" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <constraints>
                                     <constraint id="572" firstItem="523" firstAttribute="width" constant="240"/>
+                                    <constraint id="13022" firstItem="523" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="572"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="572"/>
+                                        <exclude reference="13022"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="572"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="572"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13022"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="524" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="511" width="240" height="40"/>
+                                <rect key="frame" x="106" y="717" width="526" height="40"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="Calculate"/>
                                 <constraints>
                                     <constraint id="569" firstItem="524" firstAttribute="width" constant="240"/>
                                     <constraint id="570" firstItem="524" firstAttribute="height" constant="40"/>
+                                    <constraint id="13018" firstItem="524" firstAttribute="width" constant="526"/>
+                                    <constraint id="13019" firstItem="524" firstAttribute="height" constant="40"/>
                                 </constraints>
                                 <connections>
                                     <action selector="CalculateButton_TouchUpInside:" destination="211" id="574" eventType="touchUpInside"/>
                                 </connections>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="569"/>
+                                        <include reference="570"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="569"/>
+                                        <exclude reference="570"/>
+                                        <exclude reference="13018"/>
+                                        <exclude reference="13019"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="569"/>
+                                        <include reference="570"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="569"/>
+                                        <include reference="570"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13018"/>
+                                        <include reference="13019"/>
+                                    </mask>
+                                </variation>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="525" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount">
-                                <rect key="frame" x="67.5" y="296" width="240" height="30"/>
+                                <rect key="frame" x="106" y="512" width="526" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <constraints>
                                     <constraint id="559" firstItem="525" firstAttribute="width" constant="240"/>
+                                    <constraint id="12981" firstItem="525" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="559"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="559"/>
+                                        <exclude reference="12981"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="559"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="559"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="12981"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="526" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="380.5" width="240" height="30"/>
+                                <rect key="frame" x="106" y="592.5" width="526" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <constraints>
                                     <constraint id="563" firstItem="526" firstAttribute="width" constant="240"/>
+                                    <constraint id="13008" firstItem="526" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="563"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="563"/>
+                                        <exclude reference="13008"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="563"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="563"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13008"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="527" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="452" width="240" height="30"/>
+                                <rect key="frame" x="106" y="658" width="526" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <constraints>
                                     <constraint id="567" firstItem="527" firstAttribute="width" constant="240"/>
+                                    <constraint id="13014" firstItem="527" firstAttribute="width" constant="526"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="567"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="567"/>
+                                        <exclude reference="13014"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="567"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="567"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="13014"/>
+                                    </mask>
+                                </variation>
                             </textField>
                         </subviews>
                         <constraints>
@@ -442,6 +699,24 @@
                             <constraint id="11913" firstItem="522" firstAttribute="leading" secondItem="524" secondAttribute="trailing" constant="69"/>
                             <constraint id="11915" firstItem="527" firstAttribute="top" secondItem="522" secondAttribute="bottom" constant="8"/>
                             <constraint id="11916" firstItem="527" firstAttribute="leading" secondItem="524" secondAttribute="trailing" constant="69"/>
+                            <constraint id="12968" firstItem="212" firstAttribute="centerX" secondItem="519" secondAttribute="centerX" constant="15"/>
+                            <constraint id="12969" firstItem="212" firstAttribute="centerY" secondItem="519" secondAttribute="centerY" constant="233"/>
+                            <constraint id="12974" firstItem="520" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="12975" firstItem="520" firstAttribute="top" secondItem="519" secondAttribute="bottom" constant="15"/>
+                            <constraint id="12979" firstItem="525" firstAttribute="leading" secondItem="520" secondAttribute="leading"/>
+                            <constraint id="12980" firstItem="525" firstAttribute="top" secondItem="520" secondAttribute="bottom" constant="8"/>
+                            <constraint id="13003" firstItem="521" firstAttribute="leading" secondItem="525" secondAttribute="leading"/>
+                            <constraint id="13004" firstItem="521" firstAttribute="top" secondItem="525" secondAttribute="bottom" constant="21"/>
+                            <constraint id="13006" firstItem="526" firstAttribute="leading" secondItem="521" secondAttribute="leading"/>
+                            <constraint id="13007" firstItem="526" firstAttribute="top" secondItem="521" secondAttribute="bottom" constant="9"/>
+                            <constraint id="13009" firstItem="522" firstAttribute="leading" secondItem="526" secondAttribute="leading"/>
+                            <constraint id="13010" firstItem="522" firstAttribute="top" secondItem="526" secondAttribute="bottom" constant="8"/>
+                            <constraint id="13012" firstItem="527" firstAttribute="leading" secondItem="522" secondAttribute="leading"/>
+                            <constraint id="13013" firstItem="527" firstAttribute="top" secondItem="522" secondAttribute="bottom" constant="7"/>
+                            <constraint id="13016" firstItem="524" firstAttribute="top" secondItem="527" secondAttribute="bottom" constant="29"/>
+                            <constraint id="13017" firstItem="524" firstAttribute="leading" secondItem="527" secondAttribute="leading"/>
+                            <constraint id="13020" firstItem="523" firstAttribute="leading" secondItem="524" secondAttribute="leading"/>
+                            <constraint id="13021" firstItem="523" firstAttribute="top" secondItem="524" secondAttribute="bottom" constant="26"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
@@ -503,6 +778,23 @@
                                 <exclude reference="11912"/>
                                 <exclude reference="11916"/>
                                 <exclude reference="11915"/>
+                                <exclude reference="12969"/>
+                                <exclude reference="12968"/>
+                                <exclude reference="12975"/>
+                                <exclude reference="12974"/>
+                                <exclude reference="12979"/>
+                                <exclude reference="13004"/>
+                                <exclude reference="13003"/>
+                                <exclude reference="13007"/>
+                                <exclude reference="13006"/>
+                                <exclude reference="13010"/>
+                                <exclude reference="13009"/>
+                                <exclude reference="13013"/>
+                                <exclude reference="13012"/>
+                                <exclude reference="13017"/>
+                                <exclude reference="13016"/>
+                                <exclude reference="13021"/>
+                                <exclude reference="13020"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -549,6 +841,27 @@
                                 <include reference="11915"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="12969"/>
+                                <include reference="12968"/>
+                                <include reference="12975"/>
+                                <include reference="12974"/>
+                                <include reference="12979"/>
+                                <include reference="13004"/>
+                                <include reference="13003"/>
+                                <include reference="13007"/>
+                                <include reference="13006"/>
+                                <include reference="13010"/>
+                                <include reference="13009"/>
+                                <include reference="13013"/>
+                                <include reference="13012"/>
+                                <include reference="13017"/>
+                                <include reference="13016"/>
+                                <include reference="13021"/>
+                                <include reference="13020"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" id="213" title="Profit/Loss"/>
                     <connections>
@@ -568,7 +881,7 @@
             <objects>
                 <tabBarController id="216" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="219">
-                        <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -586,39 +899,39 @@
             <objects>
                 <tableViewController id="234" sceneMemberID="viewController" customClass="CalculationHistory">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="235">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="238">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="238" id="239">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="12492">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12492" id="12493">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="12494">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12494" id="12495">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="12496">
-                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="160" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12496" id="12497">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

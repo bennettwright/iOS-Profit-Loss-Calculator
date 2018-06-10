@@ -40,12 +40,13 @@ namespace ProfitLossCalculator
             Calculate.NumberOfShares = principal / entry;
             double profit = Calculate.CalculateProfit(entry, exit);
 
-            ResultLabel.Text = profit > 0 ? $"Profit: {Settings.Currency}{profit}," : $"Loss: {Settings.Currency}{profit},";
-            ResultLabel.Text += $" ROI: {Calculate.CalculateROI(exit, principal)}%";
+            ResultLabel.Text = $"Profit: {Settings.Currency}{profit}, ROI: {Calculate.CalculateROI(exit, principal)}%";
+
 
             /*           Add to history                 */
-            string info1 = $"Principal: {principal}, Entry: {entry}, Exit: {exit}";
-            CalculationHistory.AddData(info1, ResultLabel.Text);
+
+            string title = $"Principal: {principal}, Entry: {entry}, Exit: {exit}"; // cell title
+            CalculationHistory.AddData(title, ResultLabel.Text); // textbox is subtitle 
         }
 
         private void CheckEmpty()
@@ -65,6 +66,5 @@ namespace ProfitLossCalculator
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
-
     }
 }

@@ -15,11 +15,10 @@ namespace ProfitLossCalculator
         private List<TableItem> coreData = new List<TableItem>();
         private static List<TableItem> data = new List<TableItem>();
 
-
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            HistoryTable.Source = new TableSource(coreData);
+            HistoryTable.Source = new TableSource(coreData, this);
         }
 
         //info1 will be all entered info, like entry, exit, etc.
@@ -43,10 +42,12 @@ namespace ProfitLossCalculator
 
         List<TableItem> tableItems;
         protected string cellIdentifier = "TableCell";
+        UITableViewController owner;
 
-        public TableSource(List<TableItem> items)
+        public TableSource(List<TableItem> items, UITableViewController owner)
         {
             tableItems = items;
+            this.owner = owner;
         }
 
         public override nint RowsInSection(UITableView tableview, nint section)
@@ -78,6 +79,14 @@ namespace ProfitLossCalculator
             return 1;
         }
 
+
+        public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            UIAlertController okAlertController = UIAlertController.Create(tableItems[indexPath.Row].Title, tableItems[indexPath.Row].Details, UIAlertControllerStyle.Alert);
+            okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+            owner.PresentViewController(okAlertController, true, null);
+            tableView.DeselectRow(indexPath, true);
+        }
 
         #region  editing methods 
 

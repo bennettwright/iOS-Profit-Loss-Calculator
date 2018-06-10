@@ -91,6 +91,8 @@
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market1.png" />
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market2.jpg" />
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market3.png" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\down-market2.png" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

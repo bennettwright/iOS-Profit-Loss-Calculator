@@ -1,4 +1,3 @@
-using Foundation;
 using System;
 using UIKit;
 
@@ -42,12 +41,10 @@ namespace ProfitLossCalculator
 
             string rewardRatio = Calculate.CalculateRiskRewardRatio(entry, exit, stop);
 
-            ResultLabel.Text = profit > 0 ? $"Profit: {Settings.Currency}{profit}," : $"Loss: {Settings.Currency}{profit},";
-            ResultLabel.Text += $" {rewardRatio}, ROI: {Calculate.CalculateROI(exit, principal)}%";
+            ResultLabel.Text = $"Profit: {Settings.Currency}{profit}, {rewardRatio}, ROI: {ROI}%";
 
             string info1 = $"Entry: {entry}, Target: {exit}, Stop: {stop}";
-            string info2 = $"Profit: {Settings.Currency}{profit}, {rewardRatio}, ROI: {ROI}";
-            CalculationHistory.AddData(info1, info2);
+            CalculationHistory.AddData(info1, ResultLabel.Text);
         }
 
         private void CheckEmpty()

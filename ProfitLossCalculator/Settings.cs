@@ -10,6 +10,7 @@ namespace ProfitLossCalculator
         {
             get => CheckSettings();
         }
+
         private static string  CheckSettings()
         {
             NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
