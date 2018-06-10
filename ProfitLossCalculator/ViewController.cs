@@ -40,13 +40,29 @@ namespace ProfitLossCalculator
             Calculate.NumberOfShares = principal / entry;
             double profit = Calculate.CalculateProfit(entry, exit);
 
-            ResultLabel.Text = $"Profit: {Settings.Currency}{profit}, ROI: {Calculate.CalculateROI(exit, entry, principal)}%";
+
+            // flip image for according to profit
+            if (profit < 0)
+            {
+                TradeImage.Image = UIImage.FromBundle("Down-Market");
+                ResultLabel.Text = $"Loss: {Settings.Currency}{profit:0.00}, " +
+                    $"ROI: {Calculate.CalculateROI(exit, entry):0}%";
+            }
+            else
+            {
+                TradeImage.Image = UIImage.FromBundle("Up-Market");
+                ResultLabel.Text = $"Profit: {Settings.Currency}{profit:0.00}, " +
+                    $"ROI: {Calculate.CalculateROI(exit, entry):0}%";
+            }
+
 
 
             /*           Add to history                 */
 
-            string title = $"Principal: {principal}, Entry: {entry}, Exit: {exit}"; // cell title
-            CalculationHistory.AddData(title, ResultLabel.Text); // textbox is subtitle 
+            // first param is cell title, second is subtitle
+            string title = $"Principal: {principal}, Entry: {entry}, Exit: {exit}";
+            CalculationHistory.AddData(title, ResultLabel.Text); 
+
         }
 
         private void CheckEmpty()

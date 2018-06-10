@@ -93,10 +93,15 @@
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market3.png" />
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\down-market2.png" />
     <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market.jpg" />
+    <ImageAsset Include="Assets.xcassets\Down-Market.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Down-Market.imageset\down-market.png" />
+    <ImageAsset Include="Assets.xcassets\Down-Market.imageset\down-market2.png" />
+    <ImageAsset Include="Assets.xcassets\Down-Market.imageset\down-market3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\Up-Market.imageset\" />
+    <Folder Include="Assets.xcassets\Down-Market.imageset\" />
     <Folder Include="Assets.xcassets\Down-Market.imageset\" />
   </ItemGroup>
   <ItemGroup>

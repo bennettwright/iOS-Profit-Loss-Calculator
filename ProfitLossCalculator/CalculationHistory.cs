@@ -23,7 +23,7 @@ namespace ProfitLossCalculator
 
         //info1 will be all entered info, like entry, exit, etc.
         //info2 will be all the generated info like profit, percentage, etc.
-        public static void AddData(string info1, string info2) => data.Add(new TableItem(info1, info2));
+        public static void AddData(string title, string subtitle) => data.Add(new TableItem(title, subtitle));
 
         public override void ViewWillAppear(bool animated)
         {
