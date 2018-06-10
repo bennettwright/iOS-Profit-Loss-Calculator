@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="216">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="205">
+            <objects>
+                <viewController id="206" sceneMemberID="viewController" customClass="RiskController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="201"/>
+                        <viewControllerLayoutGuide type="bottom" id="202"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="207">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4418" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="106" width="240" height="128"/>
+                                <constraints>
+                                    <constraint id="4419" firstItem="4418" firstAttribute="height" constant="128"/>
+                                    <constraint id="4420" firstItem="4418" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4430" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="67.5" y="256" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4431" firstItem="4430" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4432" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount">
+                                <rect key="frame" x="67.5" y="285" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="4433" firstItem="4432" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4434" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="326" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4435" firstItem="4434" firstAttribute="width" constant="222"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4436" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:">
+                                <rect key="frame" x="67.5" y="392.5" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4437" firstItem="4436" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4438" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="355" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="4439" firstItem="4438" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4440" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="67.5" y="420" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="4441" firstItem="4440" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4442" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="537" width="240" height="40"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <state key="normal" title="Calculate"/>
+                                <constraints>
+                                    <constraint id="4445" firstItem="4442" firstAttribute="width" constant="240"/>
+                                    <constraint id="4446" firstItem="4442" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="CalculateButton_TouchUpInside:" destination="4444" id="4443" eventType="touchUpInside"/>
+                                    <action selector="CalculateButton_TouchUpInside:" destination="206" id="4512" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4447" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="23" y="590" width="326" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4448" firstItem="4447" firstAttribute="width" constant="326"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4479" translatesAutoresizingMaskIntoConstraints="NO" text="Stop Loss:">
+                                <rect key="frame" x="68" y="459" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4480" firstItem="4479" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4487" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="488" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <constraints>
+                                    <constraint id="4488" firstItem="4487" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4490" firstItem="4418" firstAttribute="centerX" secondItem="207" secondAttribute="centerX"/>
+                            <constraint id="4491" firstItem="207" firstAttribute="centerY" secondItem="4418" secondAttribute="centerY" constant="163"/>
+                            <constraint id="4492" firstItem="4430" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4493" firstItem="4432" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4494" firstItem="4434" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4495" firstItem="4438" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4496" firstItem="4436" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4497" firstItem="4440" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4498" firstItem="4479" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4499" firstItem="4487" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4500" firstItem="4442" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="4501" firstItem="4447" firstAttribute="leading" secondItem="4418" secondAttribute="leading" constant="-45"/>
+                            <constraint id="4502" firstItem="4430" firstAttribute="top" secondItem="4418" secondAttribute="bottom" constant="22"/>
+                            <constraint id="4503" firstItem="4432" firstAttribute="top" secondItem="4430" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4504" firstItem="4434" firstAttribute="top" secondItem="4432" secondAttribute="bottom" constant="11"/>
+                            <constraint id="4505" firstItem="4438" firstAttribute="top" secondItem="4434" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4506" firstItem="4436" firstAttribute="top" secondItem="4438" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4507" firstItem="4440" firstAttribute="top" secondItem="4436" secondAttribute="bottom" constant="7"/>
+                            <constraint id="4508" firstItem="4479" firstAttribute="top" secondItem="4440" secondAttribute="bottom" constant="9"/>
+                            <constraint id="4509" firstItem="4487" firstAttribute="top" secondItem="4479" secondAttribute="bottom" constant="8"/>
+                            <constraint id="4510" firstItem="4442" firstAttribute="top" secondItem="4487" secondAttribute="bottom" constant="19"/>
+                            <constraint id="4511" firstItem="4447" firstAttribute="top" secondItem="4442" secondAttribute="bottom" constant="13"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reward : Risk" id="208"/>
+                    <connections>
+                        <outlet property="PrincipalTxtField" destination="4432" id="name-outlet-4432"/>
+                        <outlet property="EntryTxtField" destination="4438" id="name-outlet-4438"/>
+                        <outlet property="TargetTxtField" destination="4440" id="name-outlet-4440"/>
+                        <outlet property="StopLTxtField" destination="4487" id="name-outlet-4487"/>
+                        <outlet property="CalculateButton" destination="4442" id="name-outlet-4442"/>
+                        <outlet property="ResultLabel" destination="4447" id="name-outlet-4447"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="209" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="543"/>
+        </scene>
+        <scene sceneID="210">
+            <objects>
+                <viewController id="211" sceneMemberID="viewController" customClass="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="203"/>
+                        <viewControllerLayoutGuide type="bottom" id="204"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="212">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="519" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="106" width="240" height="128"/>
+                                <constraints>
+                                    <constraint id="538" firstItem="519" firstAttribute="height" constant="128"/>
+                                    <constraint id="539" firstItem="519" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="520" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="267" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="557" firstItem="520" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="521" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="352" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="561" firstItem="521" firstAttribute="width" constant="222"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="522" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:" misplaced="YES">
+                                <rect key="frame" x="68" y="424" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="565" firstItem="522" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="523" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="575" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="572" firstItem="523" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="524" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="511" width="240" height="40"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <state key="normal" title="Calculate"/>
+                                <constraints>
+                                    <constraint id="569" firstItem="524" firstAttribute="width" constant="240"/>
+                                    <constraint id="570" firstItem="524" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="CalculateButton_TouchUpInside:" destination="211" id="574" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="525" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount">
+                                <rect key="frame" x="68" y="296" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <constraints>
+                                    <constraint id="559" firstItem="525" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="526" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="68" y="381" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <constraints>
+                                    <constraint id="563" firstItem="526" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="527" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="67.5" y="452" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <constraints>
+                                    <constraint id="567" firstItem="527" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint id="536" firstItem="519" firstAttribute="centerX" secondItem="212" secondAttribute="centerX"/>
+                            <constraint id="537" firstItem="212" firstAttribute="centerY" secondItem="519" secondAttribute="centerY" constant="163"/>
+                            <constraint id="549" firstItem="520" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="550" firstItem="525" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="551" firstItem="521" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="552" firstItem="526" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="553" firstItem="522" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="554" firstItem="527" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="555" firstItem="524" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="556" firstItem="520" firstAttribute="top" secondItem="519" secondAttribute="bottom" constant="33"/>
+                            <constraint id="558" firstItem="525" firstAttribute="top" secondItem="520" secondAttribute="bottom" constant="8"/>
+                            <constraint id="560" firstItem="521" firstAttribute="top" secondItem="525" secondAttribute="bottom" constant="26"/>
+                            <constraint id="562" firstItem="526" firstAttribute="top" secondItem="521" secondAttribute="bottom" constant="8"/>
+                            <constraint id="564" firstItem="522" firstAttribute="top" secondItem="526" secondAttribute="bottom" constant="13"/>
+                            <constraint id="566" firstItem="527" firstAttribute="top" secondItem="522" secondAttribute="bottom" constant="8"/>
+                            <constraint id="568" firstItem="524" firstAttribute="top" secondItem="527" secondAttribute="bottom" constant="29"/>
+                            <constraint id="571" firstItem="523" firstAttribute="top" secondItem="524" secondAttribute="bottom" constant="24"/>
+                            <constraint id="573" firstItem="524" firstAttribute="leading" secondItem="523" secondAttribute="leading"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="213" title="Profit/Loss"/>
+                    <connections>
+                        <outlet property="TargetTxtField" destination="527" id="name-outlet-527"/>
+                        <outlet property="EntryTxtField" destination="526" id="name-outlet-526"/>
+                        <outlet property="PrincipalTxtField" destination="525" id="name-outlet-525"/>
+                        <outlet property="CalculateButton" destination="524" id="name-outlet-524"/>
+                        <outlet property="ResultLabel" destination="523" id="name-outlet-523"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="214" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="584"/>
+        </scene>
+        <scene sceneID="215">
+            <objects>
+                <tabBarController id="216" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="219">
+                        <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="211" kind="relationship" relationship="viewControllers" id="217"/>
+                        <segue destination="206" kind="relationship" relationship="viewControllers" id="218"/>
+                        <segue id="308" destination="234" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="220" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="-253"/>
+        </scene>
+        <scene sceneID="233">
+            <objects>
+                <tableViewController id="234" sceneMemberID="viewController" customClass="CalculationHistory">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="235">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="238">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="238" id="239">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="234" id="236"/>
+                            <outlet property="delegate" destination="234" id="237"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Calculation History" id="307"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="HistoryTable" destination="235" id="name-outlet-235"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="240" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="494"/>
+        </scene>
+    </scenes>
+</document>

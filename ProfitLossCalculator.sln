@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfitLossCalculator", "ProfitLossCalculator\ProfitLossCalculator.csproj", "{4070E240-49C5-4ACC-B882-29D65CE6C726}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Release|iPhone.ActiveCfg = Release|iPhone
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Release|iPhone.Build.0 = Release|iPhone
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{4070E240-49C5-4ACC-B882-29D65CE6C726}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
