@@ -85,9 +85,17 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon3.png" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market1.png" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Up-Market.imageset\up-market3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\Up-Market.imageset\" />
+    <Folder Include="Assets.xcassets\Down-Market.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

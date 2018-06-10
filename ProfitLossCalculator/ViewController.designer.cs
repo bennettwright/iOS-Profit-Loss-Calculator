@@ -33,6 +33,10 @@ namespace ProfitLossCalculator
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField TargetTxtField { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView TradeImage { get; set; }
+
         [Action ("CalculateButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void CalculateButton_TouchUpInside (UIKit.UIButton sender);
@@ -62,6 +66,11 @@ namespace ProfitLossCalculator
             if (TargetTxtField != null) {
                 TargetTxtField.Dispose ();
                 TargetTxtField = null;
+            }
+
+            if (TradeImage != null) {
+                TradeImage.Dispose ();
+                TradeImage = null;
             }
         }
     }

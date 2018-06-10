@@ -21,15 +21,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4418" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="106" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4418" translatesAutoresizingMaskIntoConstraints="NO" image="Up-Market">
+                                <rect key="frame" x="67.5" y="106.5" width="240" height="128"/>
                                 <constraints>
                                     <constraint id="4419" firstItem="4418" firstAttribute="height" constant="128"/>
                                     <constraint id="4420" firstItem="4418" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4430" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="67.5" y="256" width="240" height="21"/>
+                                <rect key="frame" x="67.5" y="256.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                                 </constraints>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4434" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="326" width="222" height="21"/>
+                                <rect key="frame" x="67.5" y="326" width="222" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,7 +65,7 @@
                                 </constraints>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4438" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="355" width="240" height="30"/>
+                                <rect key="frame" x="67.5" y="354.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -83,7 +83,7 @@
                                 </constraints>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4442" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="537" width="240" height="40"/>
+                                <rect key="frame" x="67.5" y="536.5" width="240" height="40"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="Calculate"/>
                                 <constraints>
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4447" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="23" y="590" width="326" height="20"/>
+                                <rect key="frame" x="22.5" y="589.5" width="326" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                                 </constraints>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4479" translatesAutoresizingMaskIntoConstraints="NO" text="Stop Loss:">
-                                <rect key="frame" x="68" y="459" width="240" height="21"/>
+                                <rect key="frame" x="67.5" y="459" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                                 </constraints>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4487" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="488" width="240" height="30"/>
+                                <rect key="frame" x="67.5" y="487.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -146,7 +146,155 @@
                             <constraint id="4509" firstItem="4487" firstAttribute="top" secondItem="4479" secondAttribute="bottom" constant="8"/>
                             <constraint id="4510" firstItem="4442" firstAttribute="top" secondItem="4487" secondAttribute="bottom" constant="19"/>
                             <constraint id="4511" firstItem="4447" firstAttribute="top" secondItem="4442" secondAttribute="bottom" constant="13"/>
+                            <constraint id="12005" firstItem="207" firstAttribute="centerY" secondItem="4418" secondAttribute="centerY" constant="85"/>
+                            <constraint id="12006" firstItem="207" firstAttribute="centerX" secondItem="4418" secondAttribute="centerX" constant="155"/>
+                            <constraint id="12007" firstItem="4442" firstAttribute="top" secondItem="4418" secondAttribute="bottom" constant="19"/>
+                            <constraint id="12010" firstItem="4442" firstAttribute="leading" secondItem="4418" secondAttribute="leading"/>
+                            <constraint id="12011" firstItem="4430" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12021" firstItem="4430" firstAttribute="top" secondItem="4418" secondAttribute="top"/>
+                            <constraint id="12022" firstItem="4432" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12023" firstItem="4432" firstAttribute="top" secondItem="4430" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12024" firstItem="4434" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12025" firstItem="4434" firstAttribute="top" secondItem="4432" secondAttribute="bottom" constant="11"/>
+                            <constraint id="12026" firstItem="4438" firstAttribute="top" secondItem="4434" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12027" firstItem="4438" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12028" firstItem="4436" firstAttribute="top" secondItem="4438" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12029" firstItem="4436" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12035" firstItem="4440" firstAttribute="top" secondItem="4436" secondAttribute="bottom" constant="7"/>
+                            <constraint id="12036" firstItem="4440" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12037" firstItem="4479" firstAttribute="top" secondItem="4440" secondAttribute="bottom" constant="9"/>
+                            <constraint id="12038" firstItem="4479" firstAttribute="leading" secondItem="4418" secondAttribute="trailing" constant="57"/>
+                            <constraint id="12039" firstItem="4487" firstAttribute="top" secondItem="4479" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12040" firstItem="4487" firstAttribute="leading" secondItem="4440" secondAttribute="leading"/>
+                            <constraint id="12046" firstItem="4447" firstAttribute="top" secondItem="4442" secondAttribute="bottom" constant="25"/>
+                            <constraint id="12047" firstItem="4442" firstAttribute="leading" secondItem="4447" secondAttribute="leading" constant="50"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4490"/>
+                                <include reference="4491"/>
+                                <include reference="4492"/>
+                                <include reference="4493"/>
+                                <include reference="4494"/>
+                                <include reference="4495"/>
+                                <include reference="4496"/>
+                                <include reference="4498"/>
+                                <include reference="4499"/>
+                                <include reference="4500"/>
+                                <include reference="4501"/>
+                                <include reference="4502"/>
+                                <include reference="4503"/>
+                                <include reference="4504"/>
+                                <include reference="4505"/>
+                                <include reference="4506"/>
+                                <include reference="4507"/>
+                                <include reference="4508"/>
+                                <include reference="4509"/>
+                                <include reference="4510"/>
+                                <include reference="4511"/>
+                                <include reference="4497"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4490"/>
+                                <exclude reference="4491"/>
+                                <exclude reference="4492"/>
+                                <exclude reference="4493"/>
+                                <exclude reference="4494"/>
+                                <exclude reference="4495"/>
+                                <exclude reference="4496"/>
+                                <exclude reference="4498"/>
+                                <exclude reference="4499"/>
+                                <exclude reference="4500"/>
+                                <exclude reference="4501"/>
+                                <exclude reference="4502"/>
+                                <exclude reference="4503"/>
+                                <exclude reference="4504"/>
+                                <exclude reference="4505"/>
+                                <exclude reference="4506"/>
+                                <exclude reference="4507"/>
+                                <exclude reference="4508"/>
+                                <exclude reference="4509"/>
+                                <exclude reference="4510"/>
+                                <exclude reference="4511"/>
+                                <exclude reference="12005"/>
+                                <exclude reference="12010"/>
+                                <exclude reference="12007"/>
+                                <exclude reference="12011"/>
+                                <exclude reference="12021"/>
+                                <exclude reference="12023"/>
+                                <exclude reference="12022"/>
+                                <exclude reference="12025"/>
+                                <exclude reference="12024"/>
+                                <exclude reference="12027"/>
+                                <exclude reference="12026"/>
+                                <exclude reference="12029"/>
+                                <exclude reference="12028"/>
+                                <exclude reference="4497"/>
+                                <exclude reference="12036"/>
+                                <exclude reference="12035"/>
+                                <exclude reference="12038"/>
+                                <exclude reference="12037"/>
+                                <exclude reference="12039"/>
+                                <exclude reference="12040"/>
+                                <exclude reference="12006"/>
+                                <exclude reference="12047"/>
+                                <exclude reference="12046"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="12005"/>
+                                <include reference="12010"/>
+                                <include reference="12007"/>
+                                <include reference="12011"/>
+                                <include reference="12021"/>
+                                <include reference="12023"/>
+                                <include reference="12022"/>
+                                <include reference="12025"/>
+                                <include reference="12024"/>
+                                <include reference="12027"/>
+                                <include reference="12026"/>
+                                <include reference="12029"/>
+                                <include reference="12028"/>
+                                <include reference="12036"/>
+                                <include reference="12035"/>
+                                <include reference="12038"/>
+                                <include reference="12037"/>
+                                <include reference="12039"/>
+                                <include reference="12040"/>
+                                <include reference="12006"/>
+                                <include reference="12047"/>
+                                <include reference="12046"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="12005"/>
+                                <include reference="12010"/>
+                                <include reference="12007"/>
+                                <include reference="12011"/>
+                                <include reference="12021"/>
+                                <include reference="12023"/>
+                                <include reference="12022"/>
+                                <include reference="12025"/>
+                                <include reference="12024"/>
+                                <include reference="12027"/>
+                                <include reference="12026"/>
+                                <include reference="12029"/>
+                                <include reference="12028"/>
+                                <include reference="12036"/>
+                                <include reference="12035"/>
+                                <include reference="12038"/>
+                                <include reference="12037"/>
+                                <include reference="12039"/>
+                                <include reference="12040"/>
+                                <include reference="12006"/>
+                                <include reference="12047"/>
+                                <include reference="12046"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reward : Risk" id="208"/>
                     <connections>
@@ -174,15 +322,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="519" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="106" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="519" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="Up-Market">
+                                <rect key="frame" x="67.5" y="106.5" width="240" height="128"/>
                                 <constraints>
                                     <constraint id="538" firstItem="519" firstAttribute="height" constant="128"/>
-                                    <constraint id="539" firstItem="519" firstAttribute="width" constant="240"/>
+                                    <constraint id="11856" firstItem="519" firstAttribute="width" constant="240"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="520" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="267" width="240" height="21"/>
+                                <rect key="frame" x="67.5" y="267.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -191,7 +339,7 @@
                                 </constraints>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="521" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="352" width="222" height="21"/>
+                                <rect key="frame" x="67.5" y="352" width="222" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -199,8 +347,8 @@
                                     <constraint id="561" firstItem="521" firstAttribute="width" constant="222"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="522" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:" misplaced="YES">
-                                <rect key="frame" x="68" y="424" width="240" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="522" translatesAutoresizingMaskIntoConstraints="NO" text="Target Price:">
+                                <rect key="frame" x="67.5" y="423.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -209,7 +357,7 @@
                                 </constraints>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="523" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="575" width="240" height="21"/>
+                                <rect key="frame" x="67.5" y="575" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -218,7 +366,7 @@
                                 </constraints>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="524" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="511" width="240" height="40"/>
+                                <rect key="frame" x="67.5" y="511" width="240" height="40"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="Calculate"/>
                                 <constraints>
@@ -230,7 +378,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="525" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dollar Amount">
-                                <rect key="frame" x="68" y="296" width="240" height="30"/>
+                                <rect key="frame" x="67.5" y="296" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -239,7 +387,7 @@
                                 </constraints>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="526" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="68" y="381" width="240" height="30"/>
+                                <rect key="frame" x="67.5" y="380.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -276,7 +424,131 @@
                             <constraint id="568" firstItem="524" firstAttribute="top" secondItem="527" secondAttribute="bottom" constant="29"/>
                             <constraint id="571" firstItem="523" firstAttribute="top" secondItem="524" secondAttribute="bottom" constant="24"/>
                             <constraint id="573" firstItem="524" firstAttribute="leading" secondItem="523" secondAttribute="leading"/>
+                            <constraint id="11853" firstItem="212" firstAttribute="centerX" secondItem="519" secondAttribute="centerX" constant="155"/>
+                            <constraint id="11854" firstItem="212" firstAttribute="centerY" secondItem="519" secondAttribute="centerY" constant="88"/>
+                            <constraint id="11880" firstItem="524" firstAttribute="leading" secondItem="519" secondAttribute="leading"/>
+                            <constraint id="11881" firstItem="524" firstAttribute="top" secondItem="519" secondAttribute="bottom" constant="12"/>
+                            <constraint id="11882" firstItem="523" firstAttribute="leading" secondItem="524" secondAttribute="leading"/>
+                            <constraint id="11883" firstItem="523" firstAttribute="top" secondItem="524" secondAttribute="bottom" constant="24"/>
+                            <constraint id="11902" firstItem="520" firstAttribute="leading" secondItem="519" secondAttribute="trailing" constant="69"/>
+                            <constraint id="11904" firstItem="520" firstAttribute="top" secondItem="519" secondAttribute="top"/>
+                            <constraint id="11905" firstItem="525" firstAttribute="top" secondItem="520" secondAttribute="bottom" constant="8"/>
+                            <constraint id="11906" firstItem="525" firstAttribute="leading" secondItem="519" secondAttribute="trailing" constant="69"/>
+                            <constraint id="11907" firstItem="521" firstAttribute="top" secondItem="525" secondAttribute="bottom" constant="26"/>
+                            <constraint id="11908" firstItem="521" firstAttribute="leading" secondItem="519" secondAttribute="trailing" constant="69"/>
+                            <constraint id="11909" firstItem="526" firstAttribute="top" secondItem="521" secondAttribute="bottom" constant="8"/>
+                            <constraint id="11910" firstItem="526" firstAttribute="leading" secondItem="519" secondAttribute="trailing" constant="69"/>
+                            <constraint id="11912" firstItem="522" firstAttribute="top" secondItem="526" secondAttribute="bottom" constant="13"/>
+                            <constraint id="11913" firstItem="522" firstAttribute="leading" secondItem="524" secondAttribute="trailing" constant="69"/>
+                            <constraint id="11915" firstItem="527" firstAttribute="top" secondItem="522" secondAttribute="bottom" constant="8"/>
+                            <constraint id="11916" firstItem="527" firstAttribute="leading" secondItem="524" secondAttribute="trailing" constant="69"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="536"/>
+                                <include reference="537"/>
+                                <include reference="549"/>
+                                <include reference="550"/>
+                                <include reference="551"/>
+                                <include reference="552"/>
+                                <include reference="553"/>
+                                <include reference="554"/>
+                                <include reference="555"/>
+                                <include reference="556"/>
+                                <include reference="558"/>
+                                <include reference="560"/>
+                                <include reference="562"/>
+                                <include reference="564"/>
+                                <include reference="566"/>
+                                <include reference="568"/>
+                                <include reference="571"/>
+                                <include reference="573"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="536"/>
+                                <exclude reference="537"/>
+                                <exclude reference="549"/>
+                                <exclude reference="550"/>
+                                <exclude reference="551"/>
+                                <exclude reference="552"/>
+                                <exclude reference="553"/>
+                                <exclude reference="554"/>
+                                <exclude reference="555"/>
+                                <exclude reference="556"/>
+                                <exclude reference="558"/>
+                                <exclude reference="560"/>
+                                <exclude reference="562"/>
+                                <exclude reference="564"/>
+                                <exclude reference="566"/>
+                                <exclude reference="568"/>
+                                <exclude reference="571"/>
+                                <exclude reference="573"/>
+                                <exclude reference="11853"/>
+                                <exclude reference="11854"/>
+                                <exclude reference="11881"/>
+                                <exclude reference="11880"/>
+                                <exclude reference="11883"/>
+                                <exclude reference="11882"/>
+                                <exclude reference="11904"/>
+                                <exclude reference="11902"/>
+                                <exclude reference="11906"/>
+                                <exclude reference="11905"/>
+                                <exclude reference="11908"/>
+                                <exclude reference="11907"/>
+                                <exclude reference="11910"/>
+                                <exclude reference="11909"/>
+                                <exclude reference="11913"/>
+                                <exclude reference="11912"/>
+                                <exclude reference="11916"/>
+                                <exclude reference="11915"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="11853"/>
+                                <include reference="11854"/>
+                                <include reference="11881"/>
+                                <include reference="11880"/>
+                                <include reference="11883"/>
+                                <include reference="11882"/>
+                                <include reference="11904"/>
+                                <include reference="11902"/>
+                                <include reference="11906"/>
+                                <include reference="11905"/>
+                                <include reference="11908"/>
+                                <include reference="11907"/>
+                                <include reference="11910"/>
+                                <include reference="11909"/>
+                                <include reference="11913"/>
+                                <include reference="11912"/>
+                                <include reference="11916"/>
+                                <include reference="11915"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="11853"/>
+                                <include reference="11854"/>
+                                <include reference="11881"/>
+                                <include reference="11880"/>
+                                <include reference="11883"/>
+                                <include reference="11882"/>
+                                <include reference="11904"/>
+                                <include reference="11902"/>
+                                <include reference="11906"/>
+                                <include reference="11905"/>
+                                <include reference="11908"/>
+                                <include reference="11907"/>
+                                <include reference="11910"/>
+                                <include reference="11909"/>
+                                <include reference="11913"/>
+                                <include reference="11912"/>
+                                <include reference="11916"/>
+                                <include reference="11915"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" id="213" title="Profit/Loss"/>
                     <connections>
@@ -285,11 +557,12 @@
                         <outlet property="PrincipalTxtField" destination="525" id="name-outlet-525"/>
                         <outlet property="CalculateButton" destination="524" id="name-outlet-524"/>
                         <outlet property="ResultLabel" destination="523" id="name-outlet-523"/>
+                        <outlet property="TradeImage" destination="519" id="name-outlet-519"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="214" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506" y="584"/>
+            <point key="canvasLocation" x="-710" y="577"/>
         </scene>
         <scene sceneID="215">
             <objects>
@@ -342,4 +615,7 @@
             <point key="canvasLocation" x="605" y="494"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Up-Market" width="500" height="280"/>
+    </resources>
 </document>

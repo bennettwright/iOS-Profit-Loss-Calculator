@@ -23,6 +23,9 @@ namespace ProfitLossCalculator
                 EntryTxtField.ResignFirstResponder();
                 TargetTxtField.ResignFirstResponder();
             }));
+
+            //set image to up market
+             
         }
 
         partial void CalculateButton_TouchUpInside(UIButton sender)
@@ -39,7 +42,6 @@ namespace ProfitLossCalculator
 
             ResultLabel.Text = profit > 0 ? $"Profit: {Settings.Currency}{profit}," : $"Loss: {Settings.Currency}{profit},";
             ResultLabel.Text += $" Return: {Calculate.CalculateROI(exit, principal)}%";
-
 
             /*           Add to history                 */
 
