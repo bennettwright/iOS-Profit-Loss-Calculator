@@ -8,13 +8,12 @@ namespace ProfitLossCalculator
     {
         public static string Currency
         {
-            get => CheckSettings();
+            get 
+            {
+                NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
+                return defaults.StringForKey("currency_pref");
+            }
         }
 
-        private static string  CheckSettings()
-        {
-            NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
-            return defaults.StringForKey("currency_pref");
-        }
     }
 }

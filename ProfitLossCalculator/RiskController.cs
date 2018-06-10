@@ -32,14 +32,13 @@ namespace ProfitLossCalculator
             CheckEmpty();
             double entry = Double.Parse(EntryTxtField.Text);
             double principal = Double.Parse(PrincipalTxtField.Text);
-            Calculate.NumberOfShares = principal / entry;
-
+            double numShares = principal / entry;
             double exit = Double.Parse(TargetTxtField.Text);
             double stop = Double.Parse(StopLTxtField.Text);
-            double profit = Calculate.CalculateProfit(entry, exit);
+            double profit = Calculate.CalculateProfit(entry, exit, numShares);
             double ROI = Calculate.CalculateROI(exit, entry);
 
-            string rewardRatio = Calculate.CalculateRiskRewardRatio(entry, exit, stop);
+            string rewardRatio = Calculate.CalculateRiskRewardRatio(entry, exit, stop, numShares);
 
 
             ResultLabel.Text = $"Profit: {Settings.Currency}{profit:0.00}, {rewardRatio}, ROI: {ROI:0}%";

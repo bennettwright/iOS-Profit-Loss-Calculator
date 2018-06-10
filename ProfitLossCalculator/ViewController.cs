@@ -37,8 +37,8 @@ namespace ProfitLossCalculator
             double entry = Double.Parse(EntryTxtField.Text);
             double exit = Double.Parse(TargetTxtField.Text);
             double principal = Double.Parse(PrincipalTxtField.Text);
-            Calculate.NumberOfShares = principal / entry;
-            double profit = Calculate.CalculateProfit(entry, exit);
+            double numShares = principal / entry;
+            double profit = Calculate.CalculateProfit(entry, exit, numShares);
 
 
             // flip image for according to profit

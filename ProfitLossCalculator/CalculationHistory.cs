@@ -2,7 +2,6 @@ using Foundation;
 using System;
 using UIKit;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace ProfitLossCalculator
 {
@@ -12,7 +11,7 @@ namespace ProfitLossCalculator
         {
         }
 
-        private List<TableItem> coreData = new List<TableItem>();
+        private List<TableItem> coreData =  new List<TableItem>();
         private static List<TableItem> data = new List<TableItem>();
 
         public override void ViewDidLoad()
