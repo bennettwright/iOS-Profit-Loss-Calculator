@@ -6,7 +6,7 @@
 
         public static double CalculateProfit(double entry, double exit) => (exit - entry) * NumberOfShares;
 
-        public static double CalculateROI(double exit, double principal) => ((exit - principal) /principal) * 100; 
+        public static double CalculateROI(double exit, double entry, double principal) => ((exit - entry) /entry) * 100; 
 
         //calculates risk:reward ratio
         public static string CalculateRiskRewardRatio(double entry, double target, double stop)

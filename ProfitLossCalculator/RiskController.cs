@@ -37,7 +37,7 @@ namespace ProfitLossCalculator
             double exit = Double.Parse(TargetTxtField.Text);
             double stop = Double.Parse(StopLTxtField.Text);
             double profit = Calculate.CalculateProfit(entry, exit);
-            double ROI = Calculate.CalculateROI(exit, principal);
+            double ROI = Calculate.CalculateROI(exit, entry, principal);
 
             string rewardRatio = Calculate.CalculateRiskRewardRatio(entry, exit, stop);
 

@@ -40,7 +40,7 @@ namespace ProfitLossCalculator
             Calculate.NumberOfShares = principal / entry;
             double profit = Calculate.CalculateProfit(entry, exit);
 
-            ResultLabel.Text = $"Profit: {Settings.Currency}{profit}, ROI: {Calculate.CalculateROI(exit, principal)}%";
+            ResultLabel.Text = $"Profit: {Settings.Currency}{profit}, ROI: {Calculate.CalculateROI(exit, entry, principal)}%";
 
 
             /*           Add to history                 */
